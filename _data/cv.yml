@@ -1,0 +1,84 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Firoj Alam
+    - name: Languages
+      value: English, Bangla, Italian (Beginner)
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD
+      institution: Signals and Interactive Systems Lab, University of Trento, Trento, Italy. (December-2016)
+      year: 2016
+      description:
+        - <strong>Thesis:</strong> Computational Models for Analyzing Affective Behaviors and Personality from Speech and Text
+        - <strong>Supervisor:</strong> <a href="https://disi.unitn.it/~riccardi/" target="_blank">Prof. Giuseppe Riccardi</a>
+    - title: M.Sc. Computer Science (International Master in Human Language Technology and Interfaces)
+      institution: University of Trento, Trento, Italy
+      year: 2011
+      description:
+        - <strong>Internship:</strong> Named entities recognition on transcriptions, HLT unit, Fondazione Bruno Kessler (FBK)
+        - <strong>Supervisor:</strong> Bernardo Magnini, Roberto Zanoli
+    - title: B.Sc. Computer Science & Engineering
+      institution: BRAC University, Bangladesh.
+      year: 2006
+      description:
+        - <strong>Independent Study:</strong> Voice Creation for Speech Synthesis, Undergraduate (Computer Science and Engineering), Summer 2006
+        - <strong>Supervisor:</strong> Professor Mumit Khan
+        - <strong>Thesis:</strong> Text to Speech for Bangla Language using Festival, Undergraduate Thesis (Computer Science and Engineering), BRAC University, Spring 2006
+        - <strong>Supervisor:</strong> Professor Mumit Khan
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Senior Scientist
+      institution: Qatar Computing Research Institute, Qatar
+      year: Sept-24 to --
+      description:
+        - <strong>LPI:</strong> Fact-checking and disinformation identification (<a href="http://tanbih.qcri.org">Tanbih</a>)
+        - <strong>PI:</strong> HBKU SRG grant, AI-EDAPT -- Artificial Intelligence for Educational Adaptation Personalization and Transformation (Awarded, May 2024)
+        - <strong>LPI:</strong> NPRP14C-37878-SP-469 <a href="https://www.digitqr.net/">(SP#2 Critical Digital Literacy) Project</a>.
+        - <a href="https://llmebench.qcri.org/">LLM benchmarking</a>
+    - title: Scientist
+      institution: Qatar Computing Research Institute, Qatar
+      year: Oct-19 to Aug-24
+      description:
+        - <strong>LPI:</strong> Fact-checking and disinformation identification (<a href="http://tanbih.qcri.org">Tanbih</a>)
+        - <strong>PI:</strong> HBKU SRG grant, AI-EDAPT -- Artificial Intelligence for Educational Adaptation Personalization and Transformation (Awarded, May 2024)
+        - <strong>LPI:</strong> NPRP14C-37878-SP-469 (SP#2 Critical Digital Literacy) $625,820 USD. It is a part of a cluster project (NPRP14C-0916-210015) of ~4M USD (Jan/2023 – Dec/2026) -- The focus is on developing methods and systems to detect persuasion techniques used to manipulate people and on creating methods to raise awareness and mitigate their effects
+        - <strong>PI:</strong> NPRP14C-37878-SP-465 (SP#1 MARSAD) $926,256 USD. It is a part of a cluster project (NPRP14C-0916-210015) of ~4M USD (Jan/2023 – Dec/2027) -- The focus is to develop a web-based observatory of the past, current and trending discussion topics on social media. Oct-2019 to Present
+        - <strong>LPI:</strong> HBKU-SRO-Facebook-Multimodal Data Project (A Corpus for Persuasion Techniques in Multimodal Data) ~85K USD (May/2022 – Oct/2023) -- The goal has been to develop a larger dataset and a model for detecting persuasion techniques in memes.
+        - <strong>LPI:</strong> IDKT fund (TDF 03-1209-210013 -- Tanbih, Get to Know What You Are Reading) ~82K USD (Jan/2023 – Sept/2023) -- The goal was to enhance the capabilities of the Tanbih system by integrating Arabic models to detect media framing, factuality, bias, and propagandistic content, and to create a demonstration system for stakeholders.
+    - title: Post-Doctoral Researcher
+      institution: QCRI, Hamad Bin Khalifa University
+      year: Feb-18 to Sept-19
+      description:
+        - Responsible for <a href="http://aidr.qcri.org">AIDR</a> system development and maintenance
+        - Exploring domain adaptation techniques using deep learning
+        - Investigating how multimodality (text and image) can help in crisis computing
+
+    - title: Research Associate
+      institution: QCRI, Hamad Bin Khalifa University
+      year: Sept-16 to Jan-18
+    - title: PhD Research
+      institution: SIS Lab, University of Trento, Italy
+      year: Nov-11 to Dec-16
+      description:
+        - <strong>Segmenting Emotional Episodes:</strong> Currently working on the problem of segmenting and classifying emotional episodes in conversations. In a call center conversation, a client might be angry at some point of the conversation and perhaps after some time, he/she might be happy or show satisfactory expressions. In my research, I am trying to automatically segment these temporal emotional phenomena using machine-learning approaches.
+        - <strong>Conversation Summarization:</strong> We are working on summarizing conversations in terms of emotion, topic, and sentiment by utilizing NLP and Machine Learning techniques from speech and social media. Conversation summarization is a part of a European Union funded project aimed to advance the next-generation analytics technology (http://www.sensei-conversation.eu).
+        - <strong>Affective Behavioral Signals Recognition Systems:</strong> Designed and developed an emotion recognizer as part of an emotion analytics system. Our study mainly focused on understanding whether the agent is empathic or not while the client is angry or frustrated.
+        - <strong>Personality Trait Recognition Systems:</strong> Designed and developed Personality Trait Recognition Systems in domains such as broadcast news, human-human conversation, and social media (e.g., Facebook, YouTube) by utilizing acoustic, linguistic, and psycholinguistic information with machine learning algorithms.
+        - <strong>Open Source Tools:</strong> (e.g., Personality traits scorer, LOSO-split, LIWC-web-client using Java and Python).
+        - <strong>Research Intern, HLT Unit, Fondazione Bruno Kessler (FBK-irst), Trento, Italy. June 2011 – October 2011:</strong> Designed Named Entity Recognition System for broadcast news transcription, which also works for newspaper text.
+        - <strong>Evalita-2011:</strong> Participated in the Evalita-2011 evaluation campaign where my work ranked as the best system.
+
+    - title: Research Intern
+      institution: HLT unit, FBK, Italy
+      year: Jun-11 to Aug-11
+      description:
+
+    - title: Research Programmer
+      institution: BRAC University, Bangladesh
+      year: Sept-06 to Jul-10

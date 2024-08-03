@@ -1,0 +1,19 @@
+github_users:
+  - firojalam
+  - banglanlp
+
+repo_description_lines_max: 2
+
+github_repos:
+  - qcri/LLMeBench
+  - MaramHasanain/ArMPro
+  - firojalam/assisting-fact-checking
+  - firojalam/COVID-19-disinformation
+  - firojalam/crisis_datasets_benchmarks
+  - hsajjad/ConceptX
+  - firojalam/multimodal_social_media
+  - xashru/punctuation-restoration
+  - AridHasan/MUBASE
+  - banglanlp/bnlp-resources
+  - banglanlp/bangla-sentiment-classification
+  - banglanlp/bnlp-resources

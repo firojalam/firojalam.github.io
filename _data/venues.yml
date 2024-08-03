@@ -1,0 +1,11 @@
+"ACL":
+  url: https://www.aclweb.org/
+  color: "#00369f"
+
+"IJCAI":
+  url: https://www.ijcai.org/
+  color: "#009000"
+
+"AAAI":
+  url: https://aaai.org/
+  color: "#009f36"
