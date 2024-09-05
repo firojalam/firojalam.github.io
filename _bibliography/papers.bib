@@ -1,11 +1,101 @@
-%% This BibTeX bibliography file was created using BibDesk.
-%% http://bibdesk.sourceforge.net/
+@inproceedings{kmainasi2024native,
+  title     = {Native vs Non-Native Language Prompting: A Comparative Analysis},
+  author    = {Mohamed Bayan Kmainasi and Rakif Khan and Ali Ezzat Shahroor and Boushra Bendou and Maram Hasanain and Firoj Alam},
+  booktitle = {Proceedings of The 25th International Web Information Systems Engineering Conference (WISE)},
+  year      = {2024},
+  address   = {Doha, Qatar},
+  doi       = {},
+  url       = {},
+	bibtex_show={true},
+	preview={example_prompt_structures.png},
+}
 
-%% Created for Firoj Alam QCRI at 2024-08-03 12:51:29 +0300 
+@inproceedings{alam2024propaganda,
+  title     = {Propaganda to Hate: A Multimodal Analysis of Arabic Memes with Multi-Agent LLMs},
+  author    = {Firoj Alam and Md. Rafiul Biswas and Uzair Shah and Wajdi Zaghouani and Georgios Mikros},
+  booktitle = {Proceedings of The 25th International Web Information Systems Engineering Conference (WISE)},
+  year      = {2024},
+  address   = {Doha, Qatar},
+  doi       = {},
+  url       = {},
+	bibtex_show={true},
+	preview={exp_flow_prop_hate.png},
+}
 
+@article{hasan2024nativqa,
+	 bibtex_show={true},
+	title = {{NativQA}: Multilingual Culturally-Aligned Natural Query for LLMs},
+	author = {
+	Md. Arid Hasan and
+	Maram Hasanain and
+	Fatema Ahmad and
+	Sahinur Rahman Laskar and
+	Sunaya Upadhyay and
+	Vrunda N Sukhadia and
+	Mucahid Kutlu and
+	Shammur Absar Chowdhury and
+	Firoj Alam
+	},
+	year = {2024},
+  url={https://arxiv.org/abs/2407.09823},
+	publisher = {arXiv:2407.09823},
+    preview={data_collection_pipeline_nativqa.png},
+    selected={true},
+}
+@article{alam2024armeme,
+  title={{ArMeme}: Propagandistic Content in Arabic Memes},
+  author={Alam, Firoj and Hasnat, Abul and Ahmed, Fatema and Hasan, Md Arid and Hasanain, Maram},
+  year={2024},
+  journal={arXiv: 2406.03916},
+  preview={armeme_data_collection_pipeline.png},
+  bibtex_show={true}
+}
 
-%% Saved with string encoding Unicode (UTF-8) 
-
+@article{ThatiAR2024,
+  title={{ThatiAR}: Subjectivity Detection in Arabic News Sentences},
+  author={Reem Suwaileh and Maram Hasanain and Fatema Hubail and Wajdi Zaghouani and Firoj Alam},
+  year={2024},
+  journal={arXiv: 2406.05559},
+  preview={ThatiAR_data_collection_pipeline_subj_full.png},
+  bibtex_show={true}
+}
+@inproceedings{hasanain-etal-2024-araieval,
+    title = "{A}r{AIE}val Shared Task: Propagandistic Techniques Detection in Unimodal and Multimodal {A}rabic Content",
+    author = "Hasanain, Maram  and
+      Hasan, Md. Arid  and
+      Ahmad, Fatema  and
+      Suwaileh, Reem  and
+      Biswas, Md. Rafiul  and
+      Zaghouani, Wajdi  and
+      Alam, Firoj",
+    editor = "Habash, Nizar  and
+      Bouamor, Houda  and
+      Eskander, Ramy  and
+      Tomeh, Nadi  and
+      Abu Farha, Ibrahim  and
+      Abdelali, Ahmed  and
+      Touileb, Samia  and
+      Hamed, Injy  and
+      Onaizan, Yaser  and
+      Alhafni, Bashar  and
+      Antoun, Wissam  and
+      Khalifa, Salam  and
+      Haddad, Hatem  and
+      Zitouni, Imed  and
+      AlKhamissi, Badr  and
+      Almatham, Rawan  and
+      Mrini, Khalil",
+    booktitle = "Proceedings of The Second Arabic Natural Language Processing Conference",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.arabicnlp-1.44",
+    pages = "456--466",
+    abstract = "We present an overview of the second edition of the ArAIEval shared task, organized as part of the ArabicNLP 2024 conference co-located with ACL 2024. In this edition, ArAIEval offers two tasks: (i) detection of propagandistic textual spans with persuasion techniques identification in tweets and news articles, and (ii) distinguishing between propagandistic and non-propagandistic memes. A total of 14 teams participated in the final evaluation phase, with 6 and 9 teams participating in Tasks 1 and 2, respectively. Finally, 11 teams submitted system description papers. Across both tasks, we observed that fine-tuning transformer models such as AraBERT was at the core of the majority of the participating systems. We provide a description of the task setup, including a description of the dataset construction and the evaluation setup. We further provide a brief overview of the participating systems. All datasets and evaluation scripts are released to the research community. We hope this will enable further research on these important tasks in Arabic.",
+		preview={araieval_2024.png},
+		bibtex_show={true},
+}
 @InProceedings{CheckThat:ECIR2024,
     author="Barr{\'o}n-Cede{\~{n}}o, Alberto
         and Alam, Firoj
@@ -34,6 +124,7 @@
     pages="449--458",
     abstract="The first five editions of the CheckThat! lab focused on the main tasks of the information verification pipeline: check-worthiness, evidence retrieval and pairing, and verification. Since the 2023 edition, it has been focusing on new problems that can support the research and decision making during the verification process. In this new edition, we focus on new problems and ---for the first time--- we propose six tasks in fifteen languages (Arabic, Bulgarian, English, Dutch, French, Georgian, German, Greek, Italian, Polish, Portuguese, Russian, Slovene, Spanish, and code-mixed Hindi-English): Task 1 estimation of check-worthiness (the only task that has been present in all CheckThat! editions), Task 2 identification of subjectivity (a follow up of CheckThat! 2023 edition), Task 3 identification of persuasion (a follow up of SemEval 2023), Task 4 detection of hero, villain, and victim from memes (a follow up of CONSTRAINT 2022), Task 5 Rumor Verification using Evidence from Authorities (a first), and Task 6 robustness of credibility assessment with adversarial examples (a first). These tasks represent challenging classification and retrieval problems at the document and at the span level, including multilingual and multimodal settings.",
     isbn="978-3-031-56069-9",
+    preview={ct23_pipeline.png},
     bibtex_show={true}
 }
 
@@ -43,29 +134,29 @@
 		and Alam, Firoj
         and Stru{\ss}, Julia Maria
         and Nakov, Preslav
-        and Chakraborty, Tanmoy 
+        and Chakraborty, Tanmoy
         and Elsayed, Tamer
         and Przybyła, Piotr
 		and Caselli, Tommaso
 		and Da San Martino, Giovanni
 		and Haouari, Fatima
-        and Li, Chengkai 
-        and Piskorski, Jakub 
+        and Li, Chengkai
+        and Piskorski, Jakub
 		and Ruggeri, Federico
 		and Song, Xingyi
         and Suwaileh, Reem",
 	title="Overview of the {CLEF}-2024 {CheckThat! Lab}: Check-Worthiness, Subjectivity, Persuasion, Roles,
 Authorities and Adversarial Robustness",
 	editor="Goeuriot, Lorraine
-        and Mulhem, Philippe 
-        and Quénot, Georges 
-        and Schwab, Didier 
-        and Soulier, Laure 
-        and Di Nunzio, Giorgio Maria 
-        and Galuščáková, Petra 
-        and García Seco de Herrera, Alba 
-        and Faggioli, Guglielmo 
-        and Ferro, Nicola",		
+        and Mulhem, Philippe
+        and Quénot, Georges
+        and Schwab, Didier
+        and Soulier, Laure
+        and Di Nunzio, Giorgio Maria
+        and Galuščáková, Petra
+        and García Seco de Herrera, Alba
+        and Faggioli, Guglielmo
+        and Ferro, Nicola",
 	booktitle="Experimental IR Meets Multilinguality, Multimodality, and Interaction.
 Proceedings of the Fifteenth International Conference of the CLEF Association (CLEF 2024)",
 	year="2024",
@@ -107,13 +198,13 @@ author = {
 @inproceedings{clef-checkthat:2024:task3,
   title={Overview of the {CLEF-2024 CheckThat!} Lab Task 3 on Persuasion Techniques},
   author={
-    Piskorski, Jakub 
-    and Stefanovitch, Nicolas 
-    and Alam, Firoj 
+    Piskorski, Jakub
+    and Stefanovitch, Nicolas
+    and Alam, Firoj
     and Campos, Ricardo
     and Dimitrov, Dimitar
     and Jorge, Al{\'\i}pio
-    and Pollak, Senja 
+    and Pollak, Senja
     and Ribin, Nikolay
     and Fijav{\v{z}}, Zoran
     and Hasanain, Maram
@@ -146,7 +237,8 @@ author = {
 	title = {{S}em{E}val-2024 Task 4: Multilingual Detection of Persuasion Techniques in Memes},
 	year = {2024},
 	url = {https://aclanthology.org/2024.semeval-1.275},
-	bdsk-url-2 = {https://doi.org/10.18653/v1/2024.semeval-1.275},
+	doi = {https://doi.org/10.18653/v1/2024.semeval-1.275},
+  preview={exmpl_hierarchy.png},
 	bibtex_show={true}
 }
 
@@ -162,6 +254,7 @@ author = {
 	title = {Can {GPT}-4 Identify Propaganda? Annotation and Detection of Propaganda Spans in News Articles},
 	year = {2024},
 	url = {https://aclanthology.org/2024.lrec-main.244},
+  preview={consolidation_interface.png},
 	bibtex_show={true}
 }
 
@@ -192,6 +285,7 @@ author = {
 	title = {{LLM}s for Low Resource Languages in Multilingual, Multimodal and Dialectal Settings},
 	year = {2024},
 	url = {https://aclanthology.org/2024.eacl-tutorials.5},
+  preview={LLMs_for_Low_Resource_Languages.png},
 	bibtex_show={true}
 }
 
@@ -207,10 +301,10 @@ author = {
 	title = {{LA}ra{B}ench: Benchmarking {A}rabic {AI} with Large Language Models},
 	year = {2024},
 abstract = "Recent advancements in Large Language Models (LLMs) have significantly influenced the landscape of language and speech research. Despite this progress, these models lack specific benchmarking against state-of-the-art (SOTA) models tailored to particular languages and tasks. LAraBench addresses this gap for Arabic Natural Language Processing (NLP) and Speech Processing tasks, including sequence tagging and content classification across different domains. We utilized models such as GPT-3.5-turbo, GPT-4, BLOOMZ, Jais-13b-chat, Whisper, and USM, employing zero and few-shot learning techniques to tackle 33 distinct tasks across 61 publicly available datasets. This involved 98 experimental setups, encompassing {\textasciitilde}296K data points, {\textasciitilde}46 hours of speech, and 30 sentences for Text-to-Speech (TTS). This effort resulted in 330+ sets of experiments. Our analysis focused on measuring the performance gap between SOTA models and LLMs. The overarching trend observed was that SOTA models generally outperformed LLMs in zero-shot learning, with a few exceptions. Notably, larger computational models with few-shot learning techniques managed to reduce these performance gaps. Our findings provide valuable insights into the applicability of LLMs for Arabic NLP and speech processing tasks.",
-	
-	url = {https://aclanthology.org/2024.eacl-long.30},	
+
+	url = {https://aclanthology.org/2024.eacl-long.30},
 	selected={true},
-	preview={data_resources.png},	
+	preview={data_resources.png},
 	bibtex_show={true}
 }
 
@@ -226,7 +320,7 @@ abstract = "Recent advancements in Large Language Models (LLMs) have significant
 	title = {{LLM}e{B}ench: A Flexible Framework for Accelerating {LLM}s Benchmarking},
 	year = {2024},
 	abstract = "The recent development and success of Large Language Models (LLMs) necessitate an evaluation of their performance across diverse NLP tasks in different languages. Although several frameworks have been developed and made publicly available, their customization capabilities for specific tasks and datasets are often complex for different users. In this study, we introduce the LLMeBench framework, which can be seamlessly customized to evaluate LLMs for any NLP task, regardless of language. The framework features generic dataset loaders, several model providers, and pre-implements most standard evaluation metrics. It supports in-context learning with zero- and few-shot settings. A specific dataset and task can be evaluated for a given LLM in less than 20 lines of code while allowing full flexibility to extend the framework for custom datasets, models, or tasks. The framework has been tested on 31 unique NLP tasks using 53 publicly available datasets within 90 experimental setups, involving approximately 296K data points. We open-sourced LLMeBench for the community (https://github.com/qcri/LLMeBench/) and a video demonstrating the framework is available online (https://youtu.be/9cC2m{\_}abk3A).",
-	url = {https://aclanthology.org/2024.eacl-demo.23},		
+	url = {https://aclanthology.org/2024.eacl-demo.23},
 	selected={true},
 	preview={demo_main_fig.gif},
 	bibtex_show={true}
@@ -284,9 +378,10 @@ abstract = "Recent advancements in Large Language Models (LLMs) have significant
 	booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
 	number = {13},
 	pages = {16395--16397},
-	title = {Conceptx: A framework for latent concept analysis},
+	title = {{ConceptX}: A framework for latent concept analysis},
 	volume = {37},
 	year = {2023},
+  preview={conceptx_pipeline.png},
 	bibtex_show={true}
 }
 
@@ -333,6 +428,7 @@ abstract = "Recent advancements in Large Language Models (LLMs) have significant
 	year = {2023},
 	url = {https://aclanthology.org/2023.banglalp-1.16},
 	bdsk-url-2 = {https://doi.org/10.18653/v1/2023.banglalp-1.16},
+  preview={bangla_asr.png},
 	bibtex_show={true}
 }
 
@@ -361,7 +457,7 @@ abstract = "Recent advancements in Large Language Models (LLMs) have significant
 	title = {Proceedings of the First Workshop on Bangla Language Processing (BLP-2023)},
 	year = {2023},
 	url = {https://aclanthology.org/2023.banglalp-1.0},
-	bibtex_show={true}	
+	bibtex_show={true}
 	}
 
 @inproceedings{hasanain-etal-2023-araieval,
@@ -377,7 +473,7 @@ abstract = "Recent advancements in Large Language Models (LLMs) have significant
 	year = {2023},
 	url = {https://aclanthology.org/2023.arabicnlp-1.44},
 	bdsk-url-2 = {https://doi.org/10.18653/v1/2023.arabicnlp-1.44},
-	bibtex_show={true}	
+	bibtex_show={true}
 	}
 
 @inproceedings{xiao-alam-2023-nexus,
@@ -393,7 +489,7 @@ abstract = "Recent advancements in Large Language Models (LLMs) have significant
 	year = {2023},
 	url = {https://aclanthology.org/2023.arabicnlp-1.58},
 	bdsk-url-2 = {https://doi.org/10.18653/v1/2023.arabicnlp-1.58},
-	bibtex_show={true}	
+	bibtex_show={true}
 	}
 
 @inproceedings{tarannum2023z,
@@ -454,7 +550,7 @@ abstract = "Recent advancements in Large Language Models (LLMs) have significant
 	year = {2023},
 	bibtex_show={true}
 	}
-	
+
 
 @inproceedings{CheckThat:ECIR2022,
 	author = {Nakov, Preslav and Barr{\'o}n-Cede{\~{n}}o, Alberto and Da San Martino, Giovanni and Alam, Firoj and Stru{\ss}, Julia Maria and Mandl, Thomas and M{\'\i}guez, Rub{\'e}n and Caselli, Tommaso and Kutlu, Mucahid and Zaghouani, Wajdi and Li, Chengkai and Shaar, Shaden and Shahi, Gautam Kishore and Mubarak, Hamdy and Nikolov, Alex and Babulkov, Nikolay and Kartal, Yavuz Selim and Beltr{\'a}n, Javier},
@@ -546,7 +642,8 @@ abstract = "Recent advancements in Large Language Models (LLMs) have significant
 	title = {{A}rab{G}end: Gender Analysis and Inference on {A}rabic {T}witter},
 	year = {2022},
 	url = {https://aclanthology.org/2022.wnut-1.14},
-	bibtex_show={true}
+	bibtex_show={true},
+  preview={ArabGend.png}
 	}
 
 @inproceedings{nakov2022clef,
@@ -596,6 +693,7 @@ abstract = "Recent advancements in Large Language Models (LLMs) have significant
 	title = {Detecting and Understanding Harmful Memes: A Survey},
 	year = {2022},
 	url = {https://doi.org/10.24963/ijcai.2022/781},
+  preview={examples_harmful_memes.png},
 	bibtex_show={true}
 	}
 
@@ -633,6 +731,7 @@ abstract = "Recent advancements in Large Language Models (LLMs) have significant
 	title = {{MEDIC}: a multi-task learning dataset for disaster image classification},
 	volume = {35},
 	year = {2023},
+  preview={medic.png},
 	bibtex_show={true}
 	}
 
@@ -679,6 +778,7 @@ abstract = "Recent advancements in Large Language Models (LLMs) have significant
 	year = {2022},
 	url = {https://aclanthology.org/2022.emnlp-main.97},
 	doi = {https://doi.org/10.18653/v1/2022.emnlp-main.97},
+  preview={encoded_concept_pipeline2.png},
 	bibtex_show={true}
 	}
 
@@ -695,6 +795,7 @@ abstract = "Recent advancements in Large Language Models (LLMs) have significant
 	title = {A Survey on Multimodal Disinformation Detection},
 	year = {2022},
 	url = {https://aclanthology.org/2022.coling-1.576},
+  preview={multimodal_disinformation.png},
 	bibtex_show={true}
 	}
 
@@ -712,7 +813,7 @@ abstract = "Recent advancements in Large Language Models (LLMs) have significant
 	year = {2022},
 	url = {https://aclanthology.org/2022.naacl-main.225},
 	doi = {https://doi.org/10.18653/v1/2022.naacl-main.225},
-	preview={encoded_concept_pipeline.png},
+	preview={encoded_concept_pipeline1.png},
 	bibtex_show={true}
 	}
 
