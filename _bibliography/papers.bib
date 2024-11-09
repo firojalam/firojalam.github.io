@@ -70,17 +70,46 @@
     selected={true},
 }
 
-@article{alam2024armeme,
-  title={{ArMeme}: Propagandistic Content in Arabic Memes},
-  author={Alam, Firoj and Hasnat, Abul and Ahmed, Fatema and Hasan, Md Arid and Hasanain, Maram},
-  year={2024},
-  booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
-  address={Miami, Florida},
-  month={November 12–16},
-  publisher={Association for Computational Linguistics},
-  journal={arXiv: 2406.03916},
-  preview={armeme_data_collection_pipeline.png},
-  bibtex_show={true}
+@inproceedings{alam-etal-2024-armeme,
+    title = "{A}r{M}eme: Propagandistic Content in {A}rabic Memes",
+    author = "Alam, Firoj  and
+      Hasnat, Abul  and
+      Ahmad, Fatema  and
+      Hasan, Md. Arid  and
+      Hasanain, Maram",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.1173",
+    pages = "21071--21090",
+    abstract = "With the rise of digital communication memes have become a significant medium for cultural and political expression that is often used to mislead audience. Identification of such misleading and persuasive multimodal content become more important among various stakeholders, including social media platforms, policymakers, and the broader society as they often cause harm to the individuals, organizations and/or society. While there has been effort to develop AI based automatic system for resource rich languages (e.g., English), it is relatively little to none for medium to low resource languages. In this study, we focused on developing an Arabic memes dataset with manual annotations of propagandistic content. We annotated $\sim6K$ Arabic memes collected from various social media platforms, which is a first resource for Arabic multimodal research. We provide a comprehensive analysis aiming to develop computational tools for their detection. We made the dataset publicly available for the community.",
+    preview={armeme_data_collection_pipeline.png},
+    bibtex_show={true}
+}
+
+@inproceedings{alam2024armeme,
+    title = "{A}r{M}eme: Propagandistic Content in {A}rabic Memes",
+    author = "Alam, Firoj  and
+      Hasnat, Abul  and
+      Ahmad, Fatema  and
+      Hasan, Md. Arid  and
+      Hasanain, Maram",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.1173",
+    pages = "21071--21090",
+    abstract = "With the rise of digital communication memes have become a significant medium for cultural and political expression that is often used to mislead audience. Identification of such misleading and persuasive multimodal content become more important among various stakeholders, including social media platforms, policymakers, and the broader society as they often cause harm to the individuals, organizations and/or society. While there has been effort to develop AI based automatic system for resource rich languages (e.g., English), it is relatively little to none for medium to low resource languages. In this study, we focused on developing an Arabic memes dataset with manual annotations of propagandistic content. We annotated $\sim6K$ Arabic memes collected from various social media platforms, which is a first resource for Arabic multimodal research. We provide a comprehensive analysis aiming to develop computational tools for their detection. We made the dataset publicly available for the community.",
 }
 
 @article{ThatiAR2024,
@@ -374,14 +403,22 @@ abstract = "Recent advancements in Large Language Models (LLMs) have significant
 	bibtex_show={true}
 }
 
-@article{hasanain2024large,
-  title={Large language models for propaganda span annotation},
-  author={Hasanain, Maram and Ahmed, Fatema and Alam, Firoj},
-  booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
-  year={2024},
-  address={Miami, Florida, USA},
-  month={November 12--16},
-  publisher={Association for Computational Linguistics},
+@inproceedings{hasanain-etal-2024-large,
+    title = "Large Language Models for Propaganda Span Annotation",
+    author = "Hasanain, Maram  and
+      Ahmad, Fatema  and
+      Alam, Firoj",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-emnlp.850",
+    pages = "14522--14532",
+    abstract = "The use of propagandistic techniques in online content has increased in recent years aiming to manipulate online audiences. Fine-grained propaganda detection and extraction of textual spans where propaganda techniques are used, are essential for more informed content consumption. Automatic systems targeting the task over lower resourced languages are limited, usually obstructed by lack of large scale training datasets. Our study investigates whether Large Language Models (LLMs), such as GPT-4, can effectively extract propagandistic spans. We further study the potential of employing the model to collect more cost-effective annotations. Finally, we examine the effectiveness of labels provided by GPT-4 in training smaller language models for the task. The experiments are performed over a large-scale in-house manually annotated dataset. The results suggest that providing more annotation context to GPT-4 within prompts improves its performance compared to human annotators. Moreover, when serving as an expert annotator (consolidator), the model provides labels that have higher agreement with expert annotators, and lead to specialized models that achieve state-of-the-art over an unseen Arabic testing set. Finally, our work is the first to show the potential of utilizing LLMs to develop annotated datasets for propagandistic spans detection task prompting it with annotations from human annotators with limited expertise. All scripts and annotations will be shared with the community.",
 	selected={true},
 	preview={prop_example.png},
 	bibtex_show={true}
