@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Activities at EMNLP & ArabicNLP 2025: Research, Benchmarks, and Community Building
-date: 2025-11-23 10:00:00-0400
+title: "Activities at EMNLP & ArabicNLP 2025: Research, Benchmarks, and Community Building"
+date: 2025-11-23 10:00:00 -0400
 inline: false
 related_posts: false
 ---
-
 
 ## EMNLP (Main & Findings)
 
@@ -13,13 +12,13 @@ At EMNLP, our work centered on explainable detection of propaganda and hateful c
 
 - **MemeIntel: Explainable Detection of Propagandistic and Hateful Memes**  
   We introduce an explainable framework for detecting propaganda and hate in memes by jointly reasoning over text and image content.  
-  🔗 **Data:** https://huggingface.co/datasets/QCRI/MemeXplain
-  🔗 **Model:** https://huggingface.co/QCRI/MemeIntel
+  🔗 **Data:** https://huggingface.co/datasets/QCRI/MemeXplain  
+  🔗 **Model:** https://huggingface.co/QCRI/MemeIntel  
   🔗 **Paper:** https://aclanthology.org/2025.emnlp-main.1539.pdf
 
 - **PropXplain: Can LLMs Enable Explainable Propaganda Detection?**  
   This work explores how LLMs can provide human-interpretable explanations for propaganda detection, moving beyond simple labels toward richer narrative justifications.  
-  🔗 **Data:** https://huggingface.co/datasets/QCRI/PropXplain
+  🔗 **Data:** https://huggingface.co/datasets/QCRI/PropXplain  
   🔗 **Paper:** https://aclanthology.org/2025.findings-emnlp.1296.pdf
 
 ---
@@ -30,7 +29,7 @@ At **ArabicNLP 2025**, we contributed to both the main conference and multiple s
 
 - **BALSAM: A Platform for Benchmarking Arabic Large Language Models**  
   BALSAM, a unified platform for evaluating Arabic LLMs across tasks, domains, and varieties of Arabic.  
-  🔗 **Platform:** https://benchmarks.ksaa.gov.sa/b/balsam
+  🔗 **Platform:** https://benchmarks.ksaa.gov.sa/b/balsam  
   🔗 **Paper:** https://aclanthology.org/2025.arabicnlp-main.21.pdf
 
 - **MarsadLab @ AraGenEval (Authorship Style Transfer & Identification)**  
@@ -57,7 +56,7 @@ At **ArabicNLP 2025**, we contributed to both the main conference and multiple s
 
 ## Community & Service
 
-Beyond papers and systems, we have also organized BoF session:
+Beyond papers and systems, we have also organized a BoF session:
 
 - **Organized BoF: Multilingual & Multimodal LLMs for Everyday Knowledge**  
   We organized a Birds of a Feather session that brought together researchers working on multilingual and multimodal LLMs, with a special focus on everyday, culturally grounded knowledge. The session highlighted open challenges, shared resources, and opportunities for collaboration across speech, vision, and text.
