@@ -3,7 +3,7 @@ layout: post
 title: "Activities at EMNLP & ArabicNLP 2025 -- Research, Benchmarks, and Community Building"
 date: 2025-11-23 10:00:00 -0400
 inline: false
-related_posts: true
+related_posts: false
 ---
 
 ## EMNLP (Main & Findings)
