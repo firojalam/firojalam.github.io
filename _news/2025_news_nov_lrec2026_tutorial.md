@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tutorial Proposal Accepted at LREC-2026
-date: 2025-11-17 10:00:00 -0400
+date: 2025-11-17 10:00:00-0400
 inline: false
 related_posts: false
 ---

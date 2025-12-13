@@ -3,7 +3,7 @@ layout: page
 title: HBKU - FRG Grant
 description: New Grant Award: Islamic Media Ethics in the Digital Age
 img:
-importance: 1
+importance: 4
 category: Funded Projects
 related_publications: true
 ---
