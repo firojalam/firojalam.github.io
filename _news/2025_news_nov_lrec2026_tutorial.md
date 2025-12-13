@@ -32,5 +32,7 @@ The session will combine **conceptual foundations**, **case studies**, and **han
 - **Tutorial Date:** TBA
 
 🔗 **Tutorial page:**  
+
 [https://mm-llms-in-the-wild.github.io](https://mm-llms-in-the-wild.github.io)
+
 We look forward to engaging with the LREC community and contributing to advancing **inclusive, multilingual, and multimodal AI** for low-resource languages.

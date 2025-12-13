@@ -1,11 +1,10 @@
 ---
 layout: post
-title: New Grant Award: Islamic Media Ethics in the Digital Age
+title: New Grant Award - Islamic Media Ethics in the Digital Age
 date: 2025-08-17 10:00:00-0400
 inline: false
-related_posts: false
+related_posts: true
 ---
-
 
 ## 🏆 New Grant Award: Islamic Media Ethics in the Digital Age
 
