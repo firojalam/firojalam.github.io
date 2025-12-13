@@ -3,7 +3,7 @@ layout: post
 title: Workshop on Detecting AI-Generated Content at COLING 2025
 date: 2025-01-19 10:00:00-0400
 inline: false
-related_posts: false
+related_posts: true
 ---
 
 We successfully hosted our [Workshop on Detecting AI-Generated Content]((https://genai-content-detection.gitlab.io/)) at COLING 2025 on January 19. The workshop brought together researchers and practitioners to explore advances in identifying machine-generated text across different languages and domains.
