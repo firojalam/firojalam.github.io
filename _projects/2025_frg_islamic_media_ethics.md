@@ -79,5 +79,26 @@ Datasets, models, and research outputs will be released progressively through th
 
 🔗 **Islamic Knowledge in LLMs**  
 [Islamic Knowledge in LLMs](https://huggingface.co/collections/QCRI/islamic-knowledge-in-llms)
+[Survey paper](https://gagan3012.github.io/islamic-knowledge-survey/)
 
 Updates on milestones, publications, and releases will be posted on this page throughout the project.
+
+## References
+
+```
+@article{bhatia2026ragagenticragfaithful,
+  title = {From RAG to Agentic RAG for Faithful Islamic Question Answering},
+  author = {Bhatia, Gagan and Mubarak, Hamdy and Jarrar, Mustafa and Mikros, George and Zaraket, Fadi and Alhirthani, Mahmoud and Al-Khatib, Mutaz and Cochrane, Logan and Darwish, Kareem and Yahiaoui, Rashid and Alam, Firoj},
+  journal = {arXiv preprint arXiv:2601.07528},
+  year = {2026},
+  url = {https://arxiv.org/abs/2601.07528},
+}
+@article{bhatia2026advances_islamic_ai_survey,
+  title        = {Advances in AI Systems on Islamic Knowledge Capabilities: A Critical Survey},
+  author       = {Bhatia, Gagan and Mubarak, Hamdy and Hawasly, Majd and Jarrar, Mustafa and Mikros, George and Zaraket, Fadi and Alhirthani, Mahmoud and Al-Khatib, Mutaz and Cochrane, Logan and Darwish, Kareem and Yahiaoui, Rashid and Alam, Firoj},
+  journal      = {TechRxiv},
+  note         = {Preprint},
+  keywords     = {Computing and Processing},
+}
+
+```
