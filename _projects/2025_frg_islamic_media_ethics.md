@@ -15,6 +15,8 @@ This project, supported by the **HBKU Flagship Research Grant (3rd Cycle)**, inv
 
 The project runs from **2025–2027** and brings together expertise from **AI and Arabic NLP, Islamic studies, media ethics, and public policy**.
 
+More details: [https://islamic-media-ethics-ai.github.io/](https://islamic-media-ethics-ai.github.io/)
+
 ---
 
 ## Project motivation
