@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tutorial Proposal Accepted at LREC-2026
+title: Tutorial at LREC-2026
 date: 2025-11-17 10:00:00-0400
 inline: false
 related_posts: true
@@ -29,7 +29,7 @@ The session will combine **conceptual foundations**, **case studies**, and **han
 - **Venue:** Palau de Congressos de Palma  
 - **Location:** Palma, Mallorca, Spain  
 - **Conferece Dates:** 11–16 May 2026  
-- **Tutorial Date:** TBA
+- **Tutorial Date:** 12th May 2026
 
 🔗 **Tutorial page:**  
 

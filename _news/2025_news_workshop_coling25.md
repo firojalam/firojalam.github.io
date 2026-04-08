@@ -6,7 +6,7 @@ inline: false
 related_posts: true
 ---
 
-We successfully hosted our [Workshop on Detecting AI-Generated Content]((https://genai-content-detection.gitlab.io/)) at COLING 2025 on January 19. The workshop brought together researchers and practitioners to explore advances in identifying machine-generated text across different languages and domains.
+We successfully hosted our [Workshop on Detecting AI-Generated Content](https://genai-content-detection.gitlab.io/) at COLING 2025 on January 19. The workshop brought together researchers and practitioners to explore advances in identifying machine-generated text across different languages and domains.
 
 The event attracted 272 registered participants, with 30 attendees joining in person and online. A total of 11 research papers were accepted, reflecting a 57% acceptance rate. Additionally, three shared tasks generated significant engagement:
 
