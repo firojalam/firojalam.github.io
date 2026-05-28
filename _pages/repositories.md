@@ -218,7 +218,7 @@ nav_order: 4
     }
 
     function applyRepositoryFilter() {
-      const query = normalizeSearchValue(searchInput?.value || "");
+      const query = normalizeSearchValue(searchInput ? searchInput.value : "");
       let visibleCount = 0;
 
       searchableCards.forEach((card) => {
@@ -314,7 +314,7 @@ nav_order: 4
           description.textContent = clampText(repo.description, "Open repository on GitHub.");
         }
 
-        setSearchText(card, [repo.full_name, repo.name, repo.description, repo.language, repo.owner?.login]);
+        setSearchText(card, [repo.full_name, repo.name, repo.description, repo.language, repo.owner && repo.owner.login]);
         applyRepositoryFilter();
       } catch (error) {
         const description = card.querySelector(".repo-card__description");
@@ -353,13 +353,17 @@ nav_order: 4
 
       try {
         const { payload, kind } = await getHuggingFaceRepo(repoId);
-        const title = clampText(payload.id?.split("/").pop(), repoId.split("/").pop());
+        const title = clampText(payload.id ? payload.id.split("/").pop() : "", repoId.split("/").pop());
 
         card.href = getHuggingFaceUrl(clampText(payload.id, repoId), kind);
         setField(card, "title", title);
         setField(card, "subtitle", clampText(payload.id, repoId));
         setField(card, "kind", kind);
-        setField(card, "downloads", formatNumber(payload.downloadsAllTime ?? payload.downloads));
+        setField(
+          card,
+          "downloads",
+          formatNumber(typeof payload.downloadsAllTime === "number" ? payload.downloadsAllTime : payload.downloads)
+        );
         setField(card, "likes", formatNumber(payload.likes));
         setField(card, "updated", formatMonthYear(payload.lastModified));
 
@@ -371,7 +375,10 @@ nav_order: 4
           );
         }
 
-        setSearchText(card, [payload.id, title, payload.description, kind, payload.author, payload.pipeline_tag, payload.tags?.join(" ")]);
+        setSearchText(
+          card,
+          [payload.id, title, payload.description, kind, payload.author, payload.pipeline_tag, payload.tags ? payload.tags.join(" ") : ""]
+        );
         applyRepositoryFilter();
       } catch (error) {
         const description = card.querySelector(".repo-card__description");
@@ -443,7 +450,9 @@ nav_order: 4
       }
     }
 
-    searchInput?.addEventListener("input", applyRepositoryFilter);
+    if (searchInput) {
+      searchInput.addEventListener("input", applyRepositoryFilter);
+    }
     applyRepositoryFilter();
 
     document.querySelectorAll(".js-hf-repo-card").forEach((card) => {
