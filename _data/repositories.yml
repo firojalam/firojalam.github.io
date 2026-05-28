@@ -4,6 +4,96 @@ github_users:
 
 repo_description_lines_max: 2
 
+huggingface_groups:
+  - name: Memes & Propaganda
+    description: Explainability and harmful-content resources for memes, propaganda, and multimodal reasoning.
+  - name: LlamaLens
+    description: Base and language-specific model variants for multilingual instruction and analysis.
+  - name: AraDiCE
+    description: Arabic benchmark suites, transfer tasks, and evaluation resources.
+  - name: Question Answering
+    description: Faith, native, and spoken QA datasets designed for direct downstream use.
+  - name: Crisis
+    description: Crisis-response, humanitarian, and multimodal resources for broad applied use.
+
+huggingface_repos:
+  - id: QCRI/IslamicFaithQA
+    group: Question Answering
+  - id: QCRI/MemeXplain
+    group: Memes & Propaganda
+  - id: QCRI/PropXplain
+    group: Memes & Propaganda
+  - id: QCRI/ThatiAR
+    group: Memes & Propaganda
+  - id: QCRI/ArMeme
+    group: Memes & Propaganda
+  - id: QCRI/MemeIntel
+    group: Memes & Propaganda
+  - id: QCRI/MemeLens
+    group: Memes & Propaganda
+  - id: QCRI/MemeLens-VLM
+    group: Memes & Propaganda
+  - id: QCRI/LlamaLens
+    group: LlamaLens
+  - id: QCRI/ArmPro
+    group: Memes & Propaganda
+  - id: QCRI/LlamaLens-Arabic
+    group: LlamaLens
+  - id: QCRI/LlamaLens-English
+    group: LlamaLens
+  - id: QCRI/LlamaLens-Hindi
+    group: LlamaLens
+  - id: QCRI/LlamaLens-Arabic-Native
+    group: LlamaLens
+  - id: QCRI/LlamaLens-Hindi-Native
+    group: LlamaLens
+  - id: QCRI/Prop2Hate-Meme
+    group: Memes & Propaganda
+  - id: QCRI/AraDiCE
+    group: AraDiCE
+  - id: QCRI/AraDICE-HellaSwag
+    group: AraDiCE
+  - id: QCRI/AraDiCE-BoolQ
+    group: AraDiCE
+  - id: QCRI/AraDiCE-OpenBookQA
+    group: AraDiCE
+  - id: QCRI/AraDiCE-PIQA
+    group: AraDiCE
+  - id: QCRI/AraDiCE-TruthfulQA
+    group: AraDiCE
+  - id: QCRI/AraDICE-ArabicMMLU-egy
+    group: AraDiCE
+  - id: QCRI/AraDICE-ArabicMMLU-lev
+    group: AraDiCE
+  - id: QCRI/AraDiCE-WinoGrande
+    group: AraDiCE
+  - id: QCRI/AraDiCE-Culture
+    group: AraDiCE
+  - id: QCRI/AraDiCE-msa-to-lev
+    group: AraDiCE
+  - id: QCRI/AraDiCE-msa-to-egy
+    group: AraDiCE
+  - id: QCRI/MultiNativQA
+    group: Question Answering
+  - id: QCRI/SpokenNativQA
+    group: Question Answering
+  - id: QCRI/MenaSpeechBank
+    group: Question Answering
+  - id: QCRI/HumAID-all
+    group: Crisis
+  - id: QCRI/HumAID-events
+    group: Crisis
+  - id: QCRI/HumAID-event-type
+    group: Crisis
+  - id: QCRI/CrisisBench-all-lang
+    group: Crisis
+  - id: QCRI/CrisisBench-english
+    group: Crisis
+  - id: QCRI/MEDIC
+    group: Crisis
+  - id: QCRI/CrisisMMD
+    group: Crisis
+
 github_repos:
   - qcri/LLMeBench
   - MaramHasanain/ArMPro
@@ -16,4 +106,3 @@ github_repos:
   - AridHasan/MUBASE
   - banglanlp/bnlp-resources
   - banglanlp/bangla-sentiment-classification
-  - banglanlp/bnlp-resources

@@ -1,0 +1,49 @@
+{% assign repo_id = include.repository.id | default: include.repository %}
+{% assign repo_parts = repo_id | split: '/' %}
+{% assign repo_name = repo_parts | last %}
+{% assign group_name = include.repository.group | default: "" %}
+
+{% if site.data.repositories.repo_description_lines_max %}
+  {% assign max_lines = site.data.repositories.repo_description_lines_max %}
+{% else %}
+  {% assign max_lines = 2 %}
+{% endif %}
+
+<div class="repo p-2 text-center">
+  <a
+    class="repo-card js-hf-repo-card js-repo-card"
+    href="https://huggingface.co/{{ repo_id }}"
+    rel="external nofollow noopener"
+    target="_blank"
+    data-hf-repo="{{ repo_id }}"
+    data-search="{{ repo_id | downcase }} {{ group_name | downcase }}"
+    style="--repo-card-description-lines: {{ max_lines }};"
+  >
+    <div class="repo-card__eyebrow">
+      <span class="repo-card__badge repo-card__badge--brand">HF</span>
+      <span class="repo-card__badge" data-field="kind">Loading type</span>
+    </div>
+    <div class="repo-card__header">
+      <span class="repo-card__avatar repo-card__avatar--brand" aria-hidden="true">HF</span>
+      <div class="repo-card__identity">
+        <strong class="repo-card__title" data-field="title">{{ repo_name }}</strong>
+        <span class="repo-card__subtitle" data-field="subtitle">{{ repo_id }}</span>
+      </div>
+    </div>
+    <p class="repo-card__description">Loading Hugging Face details...</p>
+    <div class="repo-card__stats">
+      <span class="repo-stat">
+        <span class="repo-stat__label">Total downloads</span>
+        <span class="repo-stat__value" data-field="downloads">--</span>
+      </span>
+      <span class="repo-stat">
+        <span class="repo-stat__label">Likes</span>
+        <span class="repo-stat__value" data-field="likes">--</span>
+      </span>
+      <span class="repo-stat">
+        <span class="repo-stat__label">Updated</span>
+        <span class="repo-stat__value" data-field="updated">--</span>
+      </span>
+    </div>
+  </a>
+</div>

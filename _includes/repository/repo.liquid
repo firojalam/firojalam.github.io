@@ -12,16 +12,43 @@
 {% endif %}
 
 <div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.repository }}">
-    <img
-      class="repo-img-light w-100"
-      alt="{{ include.repository }}"
-      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
-    >
-    <img
-      class="repo-img-dark w-100"
-      alt="{{ include.repository }}"
-      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
-    >
+  <a
+    class="repo-card js-github-repo-card js-repo-card"
+    href="https://github.com/{{ include.repository }}"
+    rel="external nofollow noopener"
+    target="_blank"
+    data-github-repo="{{ include.repository }}"
+    data-show-owner="{{ show_owner }}"
+    data-search="{{ include.repository | downcase }}"
+    style="--repo-card-description-lines: {{ max_lines }};"
+  >
+    <div class="repo-card__header">
+      <img class="repo-card__avatar repo-card__avatar--small" src="https://github.com/{{ repo_url[0] }}.png?size=80" alt="{{ repo_url[0] }}">
+      <div class="repo-card__identity">
+        <strong class="repo-card__title" data-field="title">{{ repo_url[1] }}</strong>
+        <span class="repo-card__subtitle" data-field="subtitle">
+          {% if show_owner %}
+            {{ include.repository }}
+          {% else %}
+            @{{ repo_url[0] }}
+          {% endif %}
+        </span>
+      </div>
+    </div>
+    <p class="repo-card__description">Loading repository details...</p>
+    <div class="repo-card__stats">
+      <span class="repo-stat">
+        <span class="repo-stat__label">Stars</span>
+        <span class="repo-stat__value" data-field="stars">--</span>
+      </span>
+      <span class="repo-stat">
+        <span class="repo-stat__label">Forks</span>
+        <span class="repo-stat__value" data-field="forks">--</span>
+      </span>
+      <span class="repo-stat">
+        <span class="repo-stat__label">Language</span>
+        <span class="repo-stat__value" data-field="language">--</span>
+      </span>
+    </div>
   </a>
 </div>

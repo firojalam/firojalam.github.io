@@ -1,42 +1,15 @@
-<div class="repo p-2 text-center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <span class="d-none d-sm-none d-md-block">
-      <img
-        class="repo-img-light"
-        alt="{{ include.username }}"
-        src="https://github-profile-trophy.vercel.app/?username={{ include.username }}&theme={{ site.repo_trophies.theme_light }}&locale={{ site.lang }}&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=6"
-      >
-      <img
-        class="repo-img-dark"
-        alt="{{ include.username }}"
-        src="https://github-profile-trophy.vercel.app/?username={{ include.username }}&theme={{ site.repo_trophies.theme_dark }}&locale={{ site.lang }}&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=6"
-      >
-    </span>
-
-    <span class="d-none d-sm-block d-md-none">
-      <img
-        class="repo-img-light"
-        alt="{{ include.username }}"
-        src="https://github-profile-trophy.vercel.app/?username={{ include.username }}&theme={{ site.repo_trophies.theme_light }}&locale={{ site.lang }}&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=4"
-      >
-      <img
-        class="repo-img-dark"
-        alt="{{ include.username }}"
-        src="https://github-profile-trophy.vercel.app/?username={{ include.username }}&theme={{ site.repo_trophies.theme_dark }}&locale={{ site.lang }}&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=4"
-      >
-    </span>
-
-    <span class="d-block d-sm-none">
-      <img
-        class="repo-img-light"
-        alt="{{ include.username }}"
-        src="https://github-profile-trophy.vercel.app/?username={{ include.username }}&theme={{ site.repo_trophies.theme_light }}&locale={{ site.lang }}&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=3"
-      >
-      <img
-        class="repo-img-dark"
-        alt="{{ include.username }}"
-        src="https://github-profile-trophy.vercel.app/?username={{ include.username }}&theme={{ site.repo_trophies.theme_dark }}&locale={{ site.lang }}&margin-w=15&margin-h=15&no-bg=true&rank=-C&column=3"
-      >
-    </span>
-  </a>
+<div class="repo p-2">
+  <div class="repo-card repo-card--list js-github-recent-card" data-github-recent-user="{{ include.username }}">
+    <div class="repo-card__header">
+      <img class="repo-card__avatar repo-card__avatar--small" src="https://github.com/{{ include.username }}.png?size=80" alt="{{ include.username }}">
+      <div class="repo-card__identity">
+        <strong class="repo-card__title">Recent activity</strong>
+        <span class="repo-card__subtitle">@{{ include.username }}</span>
+      </div>
+    </div>
+    <p class="repo-card__description">Recently updated repositories.</p>
+    <ul class="repo-card__list">
+      <li class="repo-card__list-item repo-card__list-item--muted">Loading repositories...</li>
+    </ul>
+  </div>
 </div>
