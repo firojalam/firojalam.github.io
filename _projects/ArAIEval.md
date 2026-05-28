@@ -12,4 +12,4 @@ related_publications: true
 
 By offering standardized evaluation metrics, datasets, and benchmarking tools, **ArAIEval** aims to advance the development of Arabic NLP technologies. The initiative seeks to foster collaboration among researchers, developers, and industry experts, driving improvements in machine translation, sentiment analysis, text classification, and other key NLP tasks for the Arabic language. Ultimately, **ArAIEval** aspires to set new standards in Arabic NLP, ensuring that the models and tools developed are linguistically relevant.
 
-Please check [ArAIEval](https://araieval.gitlab.io/) for the updated information.
+Please check [ArAIEval](https://araieval.github.io/) for the updated information.
