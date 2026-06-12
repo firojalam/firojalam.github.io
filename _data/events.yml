@@ -12,11 +12,29 @@ sections:
         url: https://polar-semeval.github.io/
         summary: "Detecting multilingual, multicultural, and multievent online polarization across social and public discourse."
       - year: 2026
+        title: Harmful Content Detection in Arabic Memes and LLM Prompts
+        venue: ArGuard 2026
+        when: 2026 edition
+        url: https://araieval.github.io/ArGuard2026/
+        summary: "Shared task on harmful content detection in Arabic memes and LLM prompts."
+      - year: 2026
+        title: "ImageEval 2026: Cultural Grounding in Arabic Multimodal Generation and Understanding"
+        venue: ImageEval 2026
+        when: 2026 edition
+        url: https://imageeval2026.github.io/
+        summary: "Shared task focused on cultural grounding in Arabic multimodal generation and understanding."
+      - year: 2026
         title: CLEF 2026 CheckThat! Lab
         venue: CLEF 2026
         when: 2026 edition
         url: https://checkthat.gitlab.io/clef2026/
         summary: "Source retrieval for scientific web claims, fact-checking numerical claims, and generating full fact-checking articles."
+      - year: 2025
+        title: "Task 1: Hate Speech Detection"
+        venue: Second Workshop on Bangla Language Processing
+        when: 2025 edition
+        url: https://github.com/AridHasan/blp25_task1
+        summary: "Shared task focused on detecting hate speech in Bangla."
       - year: 2025
         title: GenAI Content Detection Task 3
         venue: GenAI Content Detection Workshop 2025
@@ -53,6 +71,12 @@ sections:
         when: 2024 edition
         url: https://checkthat.gitlab.io/clef2024/
         summary: "Checkworthiness, subjectivity, persuasion, roles, authorities, and adversarial robustness."
+      - year: 2023
+        title: "Task 2: Sentiment Analysis of Bangla Social Media Posts"
+        venue: First Workshop on Bangla Language Processing
+        when: 2023 edition
+        url: https://github.com/blp-workshop/blp_task2
+        summary: "Shared task on sentiment analysis for Bangla social media posts."
       - year: 2023
         title: ArAIEval Shared Task
         venue: ArabicNLP 2023

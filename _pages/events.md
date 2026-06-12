@@ -18,7 +18,7 @@ nav_order: 5
     {% for section in event_sections %}
       <a class="event-section-link" href="#{{ section.id }}">
         <strong class="event-section-link__title">{{ section.title }}</strong>
-        <span class="event-section-link__meta">{{ section.items.size }} entries curated by event type</span>
+        <span class="event-section-link__meta">{{ section.items.size }} entries</span>
       </a>
     {% endfor %}
   </div>
