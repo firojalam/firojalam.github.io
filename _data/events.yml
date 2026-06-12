@@ -1,0 +1,173 @@
+sections:
+  - id: shared-tasks
+    title: Shared Tasks
+    kicker: "2021-2026"
+    item_label: Shared Task
+    description: "Evaluation campaigns organized across CheckThat!, ArAIEval, GenAI Content Detection, SemEval, and NLP4IF, spanning fact-checking, propaganda, persuasion, multimodal reasoning, and machine-generated content detection."
+    items:
+      - year: 2026
+        title: POLAR
+        venue: SemEval 2026 Task 9
+        when: 2026 edition
+        url: https://polar-semeval.github.io/
+        summary: "Detecting multilingual, multicultural, and multievent online polarization across social and public discourse."
+      - year: 2026
+        title: CLEF 2026 CheckThat! Lab
+        venue: CLEF 2026
+        when: 2026 edition
+        url: https://checkthat.gitlab.io/clef2026/
+        summary: "Source retrieval for scientific web claims, fact-checking numerical claims, and generating full fact-checking articles."
+      - year: 2025
+        title: GenAI Content Detection Task 3
+        venue: GenAI Content Detection Workshop 2025
+        when: 2025 edition
+        url: https://github.com/liamdugan/COLING-2025-Workshop-on-MGT-Detection-Task-3
+        summary: "Cross-Domain Machine Generated Text Detection Challenge focused on robustness across domains, models, and decoding strategies."
+      - year: 2025
+        title: GenAI Content Detection Task 2
+        venue: GenAI Content Detection Workshop 2025
+        when: 2025 edition
+        url: https://gitlab.com/genai-content-detection/genai-content-detection-coling-2025
+        summary: "AI vs. Human Academic Essay Authenticity Challenge in English and Arabic."
+      - year: 2025
+        title: CLEF 2025 CheckThat! Lab
+        venue: CLEF 2025
+        when: 2025 edition
+        url: https://checkthat.gitlab.io/clef2025/
+        summary: "Subjectivity, fact-checking, claim normalization, and retrieval."
+      - year: 2024
+        title: SemEval 2024 Task 4
+        venue: SemEval 2024
+        when: 2024 edition
+        url: https://propaganda.math.unipd.it/semeval2024task4/
+        summary: "Multilingual detection of persuasion techniques in memes."
+      - year: 2024
+        title: ArAIEval Shared Task
+        venue: ArabicNLP 2024
+        when: 2024 edition
+        url: https://araieval.gitlab.io/
+        summary: "Propagandistic techniques detection in unimodal Arabic text and multimodal Arabic memes."
+      - year: 2024
+        title: CLEF 2024 CheckThat! Lab
+        venue: CLEF 2024
+        when: 2024 edition
+        url: https://checkthat.gitlab.io/clef2024/
+        summary: "Checkworthiness, subjectivity, persuasion, roles, authorities, and adversarial robustness."
+      - year: 2023
+        title: ArAIEval Shared Task
+        venue: ArabicNLP 2023
+        when: 2023 edition
+        url: https://araieval.gitlab.io/2023/
+        summary: "Persuasion techniques and disinformation detection in Arabic text."
+      - year: 2023
+        title: CLEF 2023 CheckThat! Lab
+        venue: CLEF 2023
+        when: 2023 edition
+        url: https://checkthat.gitlab.io/clef2023/
+        summary: "Checkworthiness, subjectivity, political bias, factuality, and authority of news articles and their sources."
+      - year: 2022
+        title: Shared Task on Propaganda Detection in Arabic
+        venue: WANLP 2022
+        when: December 7, 2022
+        location: Abu Dhabi, UAE
+        url: https://sites.google.com/view/propaganda-detection-in-arabic/
+        summary: "Arabic propaganda detection shared task on tweets, including technique classification and span identification."
+      - year: 2022
+        title: CLEF 2022 CheckThat! Lab
+        venue: CLEF 2022
+        when: 2022 edition
+        url: https://sites.google.com/view/clef2022-checkthat
+        summary: "Fighting the COVID-19 infodemic and fake news detection."
+      - year: 2021
+        title: SemEval 2021 Task 6
+        venue: SemEval 2021
+        when: 2021 edition
+        url: https://propaganda.math.unipd.it/semeval2021task6/
+        summary: "Multimodal detection of persuasion techniques in texts and images."
+      - year: 2021
+        title: NLP4IF-2021 Shared Tasks on Fighting the COVID-19
+        venue: NLP4IF 2021
+        when: 2021 edition
+        url: https://gitlab.com/NLP4IF/nlp4if-2021
+        summary: "Shared tasks on the COVID-19 infodemic in social media and censorship detection."
+      - year: 2021
+        title: CLEF 2021 CheckThat! Lab
+        venue: CLEF 2021
+        when: 2021 edition
+        url: https://sites.google.com/view/clef2021-checkthat
+        summary: "Detecting check-worthy claims, previously fact-checked claims, and fake news."
+
+  - id: workshops
+    title: Workshops
+    kicker: "2023-2026"
+    item_label: Workshop
+    description: "Workshops spanning Bangla language processing and AI-generated content detection, with a mix of papers, shared tasks, mentoring, and community building."
+    items:
+      - year: 2026
+        title: The 16th International Workshop on Spoken Dialogue Systems
+        venue: IWSDS 2026
+        when: February 26 - March 1, 2026
+        location: Trento, Italy
+        url: https://sites.google.com/unitn.it/iwsds26/home
+        summary: "Workshop on human-machine dialogue in the era of multimodal foundation models."
+      - year: 2025
+        title: Second Workshop on Bangla Language Processing
+        venue: IJCNLP-AACL 2025
+        when: December 2025
+        location: Mumbai, India
+        url: https://blp-workshop.github.io/
+        summary: "Second edition of BLP, bringing together Bangla NLP, speech, and multimodal research with shared tasks and mentoring."
+      - year: 2025
+        title: Workshop on Detecting AI Generated Content
+        venue: COLING 2025
+        when: January 19, 2025
+        location: Abu Dhabi, UAE
+        url: https://genai-content-detection.gitlab.io
+        summary: "Workshop and shared tasks focused on detecting machine-generated text, images, and multimodal content."
+      - year: 2023
+        title: First Workshop on Bangla Language Processing
+        venue: EMNLP 2023
+        when: December 7, 2023
+        location: Singapore
+        url: https://blp-workshop.github.io/2023/
+        summary: "First BLP workshop focused on Bangla NLP, speech, and multimodal research, including two shared tasks."
+
+  - id: conferences
+    title: Conferences
+    kicker: "2026"
+    item_label: Conference Role
+    description: "Conference organization roles and service activities."
+    items:
+      - year: 2026
+        title: Publication Chair
+        venue: EACL 2026
+        when: March 24-29, 2026
+        location: Rabat, Morocco
+        url: https://2026.eacl.org/
+        summary: "Publication Chair for the 19th Conference of the European Chapter of the Association for Computational Linguistics."
+
+  - id: bof-sessions
+    title: BoF Sessions
+    kicker: "2024-2025"
+    item_label: Birds of a Feather
+    description: "Birds-of-a-Feather sessions around multilingual, multimodal, and culturally grounded language technologies."
+    home_url: https://nativqa.gitlab.io/events/index.html
+    items:
+      - year: 2025
+        title: Multilingual and Multimodal LLMs for Everyday Knowledge
+        venue: EMNLP 2025
+        when: November 6, 2025
+        url: https://nativqa.gitlab.io/events/bof_at_emnlp2025/
+        summary: "BoF on multilingual and multimodal LLMs for everyday and culturally grounded knowledge, with talks on datasets, grounding, and evaluation."
+      - year: 2025
+        title: Multilingual and Multimodal Cultural Inclusivity in LLMs
+        venue: COLING 2025
+        when: January 23, 2025
+        url: https://nativqa.gitlab.io/events/bof_at_coling2025/
+        summary: "BoF on cultural inclusivity in multilingual and multimodal LLMs, with discussions on bias, alignment, and underrepresented languages."
+      - year: 2024
+        title: Fostering Native and Cultural Inclusivity in LLMs
+        venue: EMNLP 2024
+        when: November 13, 2024
+        url: https://nativqa.gitlab.io/events/bof_emnlp2024/
+        summary: "BoF on native and cultural inclusivity in LLMs, centered on cultural understanding, multilingual evaluation, and community discussion."

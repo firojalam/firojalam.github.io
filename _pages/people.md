@@ -4,7 +4,7 @@ permalink: /people/
 title: people
 description:
 nav: true
-nav_order: 5
+nav_order: 7
 ---
 
 ##### **Mentoring / Supervision**
