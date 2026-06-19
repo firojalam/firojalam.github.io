@@ -2,7 +2,7 @@
 layout: page
 permalink: /events/
 title: events
-description: Shared tasks, workshops, conference roles, and BoF sessions organized over the years.
+description: Shared tasks, workshops, tutorials, conference roles, and BoF sessions organized over the years.
 nav: true
 nav_order: 5
 ---
@@ -64,7 +64,14 @@ nav_order: 5
                   <h3 class="event-entry__title">
                     <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
                   </h3>
-                  <a class="event-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">Visit event site</a>
+                  <div class="event-link-list">
+                    <a class="event-link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.link_label | default: "Visit event site" }}</a>
+                    {% if item.links %}
+                      {% for link in item.links %}
+                        <a class="event-link" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>
+                      {% endfor %}
+                    {% endif %}
+                  </div>
                 </div>
 
                 <div class="event-entry__meta">

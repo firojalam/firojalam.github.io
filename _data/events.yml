@@ -1,4 +1,53 @@
 sections:
+  - id: conferences
+    title: Conferences
+    kicker: "2026"
+    item_label: Conference Role
+    description: "Conference organization roles and service activities."
+    items:
+      - year: 2026
+        title: Publication Chair
+        venue: EACL 2026
+        when: March 24-29, 2026
+        location: Rabat, Morocco
+        url: https://2026.eacl.org/
+        summary: "Publication Chair for the 19th Conference of the European Chapter of the Association for Computational Linguistics."
+
+  - id: workshops
+    title: Workshops
+    kicker: "2023-2026"
+    item_label: Workshop
+    description: "Workshops spanning Bangla language processing and AI-generated content detection, with a mix of papers, shared tasks, mentoring, and community building."
+    items:
+      - year: 2026
+        title: The 16th International Workshop on Spoken Dialogue Systems
+        venue: IWSDS 2026
+        when: February 26 - March 1, 2026
+        location: Trento, Italy
+        url: https://sites.google.com/unitn.it/iwsds26/home
+        summary: "Workshop on human-machine dialogue in the era of multimodal foundation models."
+      - year: 2025
+        title: Second Workshop on Bangla Language Processing
+        venue: IJCNLP-AACL 2025
+        when: December 2025
+        location: Mumbai, India
+        url: https://blp-workshop.github.io/
+        summary: "Second edition of BLP, bringing together Bangla NLP, speech, and multimodal research with shared tasks and mentoring."
+      - year: 2025
+        title: Workshop on Detecting AI Generated Content
+        venue: COLING 2025
+        when: January 19, 2025
+        location: Abu Dhabi, UAE
+        url: https://genai-content-detection.gitlab.io
+        summary: "Workshop and shared tasks focused on detecting machine-generated text, images, and multimodal content."
+      - year: 2023
+        title: First Workshop on Bangla Language Processing
+        venue: EMNLP 2023
+        when: December 7, 2023
+        location: Singapore
+        url: https://blp-workshop.github.io/2023/
+        summary: "First BLP workshop focused on Bangla NLP, speech, and multimodal research, including two shared tasks."
+
   - id: shared-tasks
     title: Shared Tasks
     kicker: "2021-2026"
@@ -121,54 +170,41 @@ sections:
         url: https://sites.google.com/view/clef2021-checkthat
         summary: "Detecting check-worthy claims, previously fact-checked claims, and fake news."
 
-  - id: workshops
-    title: Workshops
-    kicker: "2023-2026"
-    item_label: Workshop
-    description: "Workshops spanning Bangla language processing and AI-generated content detection, with a mix of papers, shared tasks, mentoring, and community building."
+  - id: tutorials
+    title: Tutorials
+    kicker: "2024-2026"
+    item_label: Tutorial
+    description: "Tutorials on multilingual and multimodal large language models, with a focus on low-resource, dialectal, and real-world deployment settings."
     items:
       - year: 2026
-        title: The 16th International Workshop on Spoken Dialogue Systems
-        venue: IWSDS 2026
-        when: February 26 - March 1, 2026
-        location: Trento, Italy
-        url: https://sites.google.com/unitn.it/iwsds26/home
-        summary: "Workshop on human-machine dialogue in the era of multimodal foundation models."
-      - year: 2025
-        title: Second Workshop on Bangla Language Processing
-        venue: IJCNLP-AACL 2025
-        when: December 2025
-        location: Mumbai, India
-        url: https://blp-workshop.github.io/
-        summary: "Second edition of BLP, bringing together Bangla NLP, speech, and multimodal research with shared tasks and mentoring."
-      - year: 2025
-        title: Workshop on Detecting AI Generated Content
-        venue: COLING 2025
-        when: January 19, 2025
-        location: Abu Dhabi, UAE
-        url: https://genai-content-detection.gitlab.io
-        summary: "Workshop and shared tasks focused on detecting machine-generated text, images, and multimodal content."
-      - year: 2023
-        title: First Workshop on Bangla Language Processing
-        venue: EMNLP 2023
-        when: December 7, 2023
-        location: Singapore
-        url: https://blp-workshop.github.io/2023/
-        summary: "First BLP workshop focused on Bangla NLP, speech, and multimodal research, including two shared tasks."
-
-  - id: conferences
-    title: Conferences
-    kicker: "2026"
-    item_label: Conference Role
-    description: "Conference organization roles and service activities."
-    items:
-      - year: 2026
-        title: Publication Chair
-        venue: EACL 2026
-        when: March 24-29, 2026
-        location: Rabat, Morocco
-        url: https://2026.eacl.org/
-        summary: "Publication Chair for the 19th Conference of the European Chapter of the Association for Computational Linguistics."
+        title: "Multilingual and Multimodal LLMs in the Wild: Building for Low-Resource Languages"
+        venue: LREC 2026
+        when: 2026 edition
+        url: https://mm-llms-in-the-wild.github.io/
+        summary: "Tutorial on building multilingual and multimodal LLM systems for low-resource languages in practical settings."
+      - year: 2024
+        title: LLMs for Low Resource Languages in Multilingual, Multimodal and Dialectal Settings
+        venue: EACL 2024
+        when: 2024 edition
+        url: https://llm-low-resource-lang.github.io/
+        summary: "Tutorial on low-resource language modeling across multilingual, multimodal, and dialectal settings."
+      - year: 2022
+        title: Fact-Checking, Fake News, Propaganda, and Media Bias
+        venue: WWW 2022
+        when: 2022 edition
+        url: https://propaganda.math.unipd.it/www22-tutorial/
+        link_label: Event page
+        links:
+          - label: Slides
+            url: https://drive.google.com/file/d/1FGTmyD0Ep-BVJjfABXC4u3wKtjp7Dkx3/view
+        summary: "Tutorial on fact-checking, fake news, propaganda, and media bias."
+      - year: 2022
+        title: "Fact-Checking, Fake News, Propaganda, Media Bias, and the COVID-19 Infodemic"
+        venue: WSDM 2022
+        when: 2022 edition
+        url: https://dl.acm.org/doi/10.1145/3488560.3501395
+        link_label: Paper
+        summary: "Tutorial on fact-checking, fake news, propaganda, media bias, and the COVID-19 infodemic."
 
   - id: bof-sessions
     title: BoF Sessions
