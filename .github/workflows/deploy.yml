@@ -62,3 +62,65 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  notify_indexnow:
+    runs-on: ubuntu-latest
+    needs: deploy
+    continue-on-error: true
+    steps:
+      - name: Wait for IndexNow key file to be reachable
+        env:
+          INDEXNOW_KEY: A818B0D5A616F163D7972D88CCB56EE7
+        run: |
+          set -euo pipefail
+          key_url="https://firojalam.one/${INDEXNOW_KEY}.txt"
+          for attempt in $(seq 1 20); do
+            status=$(curl -s -o /tmp/indexnow-key.txt -w "%{http_code}" "$key_url")
+            if [ "$status" = "200" ]; then
+              exit 0
+            fi
+            sleep 15
+          done
+          echo "IndexNow key file was not reachable at $key_url"
+          exit 1
+
+      - name: Submit sitemap URLs to IndexNow
+        env:
+          INDEXNOW_KEY: A818B0D5A616F163D7972D88CCB56EE7
+        run: |
+          python3 - <<'PY'
+          import json
+          import urllib.request
+          import xml.etree.ElementTree as ET
+
+          sitemap_url = "https://firojalam.one/sitemap.xml"
+          host = "firojalam.one"
+          key = "A818B0D5A616F163D7972D88CCB56EE7"
+          key_location = f"https://{host}/{key}.txt"
+
+          with urllib.request.urlopen(sitemap_url) as response:
+            sitemap_xml = response.read()
+
+          root = ET.fromstring(sitemap_xml)
+          ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+          url_list = [loc.text.strip() for loc in root.findall("sm:url/sm:loc", ns) if loc.text]
+
+          payload = json.dumps(
+            {
+              "host": host,
+              "key": key,
+              "keyLocation": key_location,
+              "urlList": url_list[:10000],
+            }
+          ).encode("utf-8")
+
+          request = urllib.request.Request(
+            "https://api.indexnow.org/indexnow",
+            data=payload,
+            headers={"Content-Type": "application/json; charset=utf-8"},
+          )
+
+          with urllib.request.urlopen(request) as response:
+            print(f"IndexNow status: {response.status}")
+            print(response.read().decode("utf-8"))
+          PY

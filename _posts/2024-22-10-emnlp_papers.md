@@ -3,6 +3,7 @@ layout: post
 title: "ArAIEval Shared Task: Propagandistic Techniques Detection in Unimodal and Multimodal Arabic Content"
 date: 2024-08-09 10:00:00
 description:
+seo_title: "ArAIEval Shared Task Results and System Papers"
 tags: EACL LLMS Benchmarking Arabic
 categories: Benchmarking
 ---

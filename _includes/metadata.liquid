@@ -15,39 +15,10 @@
 {% endif %}
 
 {% capture author_name %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
-{% capture raw_description %}{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
-{% assign meta_description = raw_description | strip_html | strip_newlines | strip %}
-
-<!-- Standard metadata -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>
-  {% if site.title == 'blank' %}
-    {% capture title %}{{ author_name }}{% endcapture %}
-  {% else %}
-    {% capture title %}{{ site.title }}{% endcapture %}
-  {% endif %}
-  {% if page.url == '/blog/index.html' %}
-    {{ page.title }} | {{ title }}
-  {% elsif page.title != 'blank' and page.url != '/' %}
-    {% if page.title == null or page.title == '' %}
-      {{ page.date | date: '%Y' }} | {{ title }}
-    {% else %}
-      {{ page.title }} | {{ title }}
-    {% endif %}
-  {% else %}
-    {{ title }}
-  {% endif %}
-</title>
-<meta name="author" content="{{ author_name }}">
-<meta name="description" content="{{ meta_description }}">
-{% if page.keywords or site.keywords %}
-  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
-{% endif %}
+{% capture title %}{{ author_name | strip }}{% endcapture %}
 
 {% assign is_blog_post = false %}
-{% if page.url != '/blog/index.html' and page.url contains '/blog/' %}
+{% if page.layout == 'post' and page.url != '/blog/index.html' and page.url != '/blog/' and page.url contains '/blog/' %}
   {% unless page.url contains '/tag/' or page.url contains '/category/' %}
     {% assign is_blog_post = true %}
   {% endunless %}
@@ -55,6 +26,104 @@
 {% assign is_homepage = false %}
 {% if page.url == '/' or page.url == '/index.html' %}
   {% assign is_homepage = true %}
+{% endif %}
+
+{% capture content_description %}
+  {{ page.content | markdownify | strip_html | strip_newlines | replace: '  ', ' ' | strip | truncate: 180 }}
+{% endcapture %}
+
+{% if page.seo_description != blank %}
+  {% capture raw_description %}{{ page.seo_description }}{% endcapture %}
+{% elsif is_homepage %}
+  {% capture raw_description %}{{ site.description }}{% endcapture %}
+{% elsif page.url == '/news/' or page.url == '/news/index.html' %}
+  {% capture raw_description %}Research news, invited talks, shared tasks, workshop activities, grants, and paper highlights from Firoj Alam and collaborators.{% endcapture %}
+{% elsif page.url == '/blog/' or page.url == '/blog/index.html' %}
+  {% capture raw_description %}Blog posts on large language models, Arabic NLP, multimodal AI, fact-checking, propaganda detection, and low-resource language research.{% endcapture %}
+{% elsif page.url == '/publications/' or page.url == '/publications/index.html' %}
+  {% capture raw_description %}Research publications by Firoj Alam spanning LLMs, multimodal AI, speech processing, fact-checking, crisis informatics, and low-resource languages.{% endcapture %}
+{% elsif page.url == '/projects/' or page.url == '/projects/index.html' %}
+  {% capture raw_description %}Research projects, grants, and initiatives led or contributed to by Firoj Alam across LLM benchmarking, disinformation analysis, speech, and multimodal AI.{% endcapture %}
+{% elsif page.url == '/repositories/' or page.url == '/repositories/index.html' %}
+  {% capture raw_description %}Curated GitHub and Hugging Face repositories, datasets, models, demos, and code releases related to LLMs, multimodal AI, Arabic NLP, and crisis computing.{% endcapture %}
+{% elsif page.url == '/people/' or page.url == '/people/index.html' %}
+  {% capture raw_description %}Students, collaborators, postdocs, research assistants, and mentorship activities associated with Firoj Alam's research and project supervision.{% endcapture %}
+{% elsif page.url == '/events/' or page.url == '/events/index.html' %}
+  {% capture raw_description %}Shared tasks, workshops, tutorials, conference roles, and BoF sessions organized by Firoj Alam across NLP, multilingual AI, and multimodal research communities.{% endcapture %}
+{% elsif page.url == '/cv/' or page.url == '/cv/index.html' %}
+  {% capture raw_description %}Curriculum vitae of Firoj Alam, including research appointments, publications, grants, service, teaching, talks, and professional activities.{% endcapture %}
+{% elsif page.url contains '/blog/tag/' %}
+  {% capture raw_description %}Posts tagged {{ page.title }} on LLMs, NLP, speech processing, multimodal AI, and disinformation research by Firoj Alam.{% endcapture %}
+{% elsif page.url contains '/blog/category/' %}
+  {% capture raw_description %}Blog posts in the {{ page.title }} category covering multilingual NLP, multimodal AI, evaluation, and misinformation research by Firoj Alam.{% endcapture %}
+{% elsif page.url == '/404.html' %}
+  {% capture raw_description %}The requested page could not be found on the Firoj Alam website. Browse publications, projects, repositories, events, news, or the CV from the main navigation instead.{% endcapture %}
+{% elsif page.url contains '/projects/' and content_description != blank %}
+  {% assign raw_description = content_description %}
+{% elsif page.url contains '/news/' and content_description != blank %}
+  {% assign raw_description = content_description %}
+{% elsif is_blog_post and content_description != blank %}
+  {% assign raw_description = content_description %}
+{% elsif page.description != blank %}
+  {% capture raw_description %}{{ page.description }}{% endcapture %}
+{% else %}
+  {% capture raw_description %}{{ site.description }}{% endcapture %}
+{% endif %}
+{% assign meta_description = raw_description | markdownify | strip_html | strip_newlines | replace: '  ', ' ' | strip | truncate: 180 %}
+
+{% if page.seo_title != blank %}
+  {% capture meta_title %}{{ page.seo_title }} | {{ title }}{% endcapture %}
+{% elsif is_homepage %}
+  {% capture meta_title %}{{ title }} | LLMs, NLP, Speech, and Disinformation Research{% endcapture %}
+{% elsif page.url == '/publications/' or page.url == '/publications/index.html' %}
+  {% capture meta_title %}Publications and Research Articles | {{ title }}{% endcapture %}
+{% elsif page.url == '/projects/' or page.url == '/projects/index.html' %}
+  {% capture meta_title %}Research Projects, Grants, and Initiatives | {{ title }}{% endcapture %}
+{% elsif page.url == '/repositories/' or page.url == '/repositories/index.html' %}
+  {% capture meta_title %}Repositories, Datasets, and Code | {{ title }}{% endcapture %}
+{% elsif page.url == '/events/' or page.url == '/events/index.html' %}
+  {% capture meta_title %}Events, Workshops, and Shared Tasks | {{ title }}{% endcapture %}
+{% elsif page.url == '/news/' or page.url == '/news/index.html' %}
+  {% capture meta_title %}News, Talks, and Research Updates | {{ title }}{% endcapture %}
+{% elsif page.url == '/blog/' or page.url == '/blog/index.html' %}
+  {% capture meta_title %}Blog on LLMs, NLP, Speech, and Disinformation | {{ title }}{% endcapture %}
+{% elsif page.url == '/people/' or page.url == '/people/index.html' %}
+  {% capture meta_title %}Students, Collaborators, and Mentoring | {{ title }}{% endcapture %}
+{% elsif page.url == '/cv/' or page.url == '/cv/index.html' %}
+  {% capture meta_title %}Curriculum Vitae and Research Profile | {{ title }}{% endcapture %}
+{% elsif page.url contains '/blog/tag/' %}
+  {% capture meta_title %}Blog posts tagged {{ page.title }} | {{ title }}{% endcapture %}
+{% elsif page.url contains '/blog/category/' %}
+  {% capture meta_title %}Blog posts in {{ page.title }} | {{ title }}{% endcapture %}
+{% elsif page.url contains '/blog/' and is_blog_post == false %}
+  {% if page.title != blank %}
+    {% capture meta_title %}Blog archive {{ page.title }} | {{ title }}{% endcapture %}
+  {% else %}
+    {% capture meta_title %}Blog archive | {{ title }}{% endcapture %}
+  {% endif %}
+{% elsif page.url contains '/news/' %}
+  {% capture meta_title %}{{ page.title }} | News | {{ title }}{% endcapture %}
+{% elsif is_blog_post %}
+  {% capture meta_title %}{{ page.title }} | Blog | {{ title }}{% endcapture %}
+{% elsif page.url contains '/projects/' %}
+  {% capture meta_title %}{{ page.title }} | Research Project | {{ title }}{% endcapture %}
+{% elsif page.url == '/404.html' %}
+  {% capture meta_title %}Page not found on the {{ title }} website{% endcapture %}
+{% elsif page.title != blank %}
+  {% capture meta_title %}{{ page.title }} | {{ title }}{% endcapture %}
+{% else %}
+  {% capture meta_title %}{{ title }}{% endcapture %}
+{% endif %}
+
+<!-- Standard metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{{ meta_title }}</title>
+<meta name="author" content="{{ author_name }}">
+<meta name="description" content="{{ meta_description }}">
+{% if page.keywords or site.keywords %}
+  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
 {% endif %}
 
 {% if page.noindex %}
@@ -68,7 +137,7 @@
   <!-- OpenGraph -->
   <meta property="og:site_name" content="{{ title }}">
   <meta property="og:type" content="{% if is_blog_post %}article{% else %}website{% endif %}">
-  <meta property="og:title" content="{% if page.title %}{{ title }} | {{ page.title }}{% else %}{{ title }}{% endif %}">
+  <meta property="og:title" content="{{ meta_title }}">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
   <meta property="og:description" content="{{ meta_description }}">
   {% if og_image_url %}
@@ -82,7 +151,7 @@
 
   <!-- Twitter card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ title }}{% endif %}">
+  <meta name="twitter:title" content="{{ meta_title }}">
   <meta name="twitter:description" content="{{ meta_description }}">
   {% if og_image_url %}
     {% if og_image_url contains '://' %}
