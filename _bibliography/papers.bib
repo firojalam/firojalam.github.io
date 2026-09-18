@@ -4,6 +4,7 @@
   booktitle = {Proceedings of Interspeech 2026},
   year      = {2026},
   address   = {Sydney, Australia},
+  url={https://arxiv.org/pdf/2608.27135},
   note = {accepted},
   bibtex_show={true},
   preview={svqa_hallucination.png},
@@ -41,16 +42,21 @@
   preview={overview_figure_propbel.png},
 }
 
-@article{ahmed2026multiturn,
+
+@inproceedings{ahmed2026multiturn,
   title={Multi-turn Conversational AI from Text to Multimodal Interaction: Data, Models, Evaluation, and Open Challenges},
-  author={Ahmed, Syeda Faiza and Ali, Zien Sheikh and Bhatti, Hunzalah Hassan and Alam, Firoj and Chowdhury, Shammur Absar},
-  journal={arXiv preprint arXiv:2608.17605},
-  year={2026},
+  author={Sara, Syeda Faiza Ahmed and Ali, Zien Sheikh and Bhatti, Hunzalah Hassan and Alam, Firoj and Chowdhury, Shammur Absar},
+  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2026},
+  year      = {2026},
+  address   = {Budapest, Hungary},
+  month     = oct,
+  note      = {Accepted for publication},
   url={https://arxiv.org/abs/2608.17605},
   bibtex_show={true},
   preview={multiturn_survey_overview.png},
   selected={true}
 }
+
 
 @inproceedings{ali2026wasilinthewildarabicspoken,
   title         = {{WASIL}: In-the-Wild Arabic Spoken Interactions with LLMs},
@@ -64,15 +70,19 @@
   url= {https://arxiv.org/abs/2605.16364},
 }
 
-@article{kmainasi2026adaptingreinforcementlearningchainofthought,
-title   = {Adapting Reinforcement Learning with Chain-of-Thought Supervision for Explainable Detection of Hateful and Propagandistic Memes},
-author  = {Kmainasi, Mohamed Bayan and Kutlu, Mucahid and Shahroor, Ali Ezzat and Hasnat, Abul and Alam, Firoj},
-journal = {arXiv preprint arXiv:2606.15307},
-year    = {2026},
-eprint  = {2606.15307},
-archivePrefix = {arXiv},
-primaryClass  = {cs.CL},
-url     = {https://arxiv.org/abs/2606.15307},
+
+
+@article{kmainasi2026adapting,
+title = {Adapting reinforcement learning with chain-of-thought supervision for explainable detection of hateful and propagandistic memes},
+journal = {Machine Learning with Applications},
+pages = {101003},
+year = {2026},
+issn = {2666-8270},
+doi = {https://doi.org/10.1016/j.mlwa.2026.101003},
+url = {https://www.sciencedirect.com/science/article/pii/S2666827026001684},
+author = {Mohamed Bayan Kmainasi and Mucahid Kutlu and Ali Ezzat Shahroor and Abul Hasnat and Firoj Alam},
+keywords = {Hateful meme detection, Propaganda detection, Multimodal large language models, Reinforcement learning, Chain-of-thought reasoning},
+abstract = {Hateful and propagandistic memes exploit the interplay between images and text to convey harmful intent that neither modality reveals alone. Although thinking-based multimodal large language models (MLLMs) have advanced vision-language understanding, their application to meme content moderation remains underexplored. We propose a reinforcement learning-based post-training method that improves classification performance and reference-based explanation quality in thinking-based MLLMs via task-specific rewards and Group Relative Policy Optimization (GRPO). Concretely, we (i) conduct a systematic empirical study of off-the-shelf MLLMs for hateful and propagandistic meme understanding across English and Arabic benchmarks, (ii) extend existing meme datasets with weakly supervised chain-of-thought (CoT) rationales via distillation and multi-LLM fine-grained propaganda annotations, (iii) introduce a GRPO-based objective with thinking-length regularization that jointly optimizes classification accuracy and explanation quality, and (iv) investigate self-training GRPO (ST-GRPO) on unlabeled memes using consensus-based pseudo-labels. Experiments on the Hateful Memes and ArMeme benchmarks show that our approach improves over previously reported results on FHM accuracy (up to +2.1%, from 79.9% to 82.0%) and on ArMeme macro-F1 (up to +7.6 points, from 0.536 to 0.612 with explanations; +6.1 compared to the original ArMeme benchmark), while also generating natural-language explanations. On ArMeme, sequence-classification baselines remain stronger in terms of raw accuracy, whereas our approach provides more balanced per-class performance along with explanations. We publicly release our code, data extensions, and evaluation resources.},
 bibtex_show={true},
 preview={Meme-Reason.png},
 }
@@ -252,11 +262,14 @@ selected={true},
   preview = {memelens_task_dataset.png}
 }
 
-@article{bhatti2026harmonizingarabicaudiospace,
+@inproceedings{bhatti2026multitask,
   title   = {Multi-Task Instruction Tuning via Data Scheduling for Low-Resource Arabic AudioLLMs},
   author  = {Bhatti, Hunzalah Hassan and Alam, Firoj and Chowdhury, Shammur Absar},
-  journal = {arXiv preprint arXiv:2601.12494},
-  year    = {2026},
+  booktitle = {Proceedings of the 5th Asia-Pacific Chapter of the Association for Computational Linguistics and the 15th International Joint Conference on Natural Language Processing},
+  year      = {2026},
+  address   = {Hengqin, China},
+  month     = nov,
+  note      = {Accepted for publication},
   url     = {https://arxiv.org/abs/2601.12494},
   bibtex_show={true},
   preview={multitask_audiollm.png},

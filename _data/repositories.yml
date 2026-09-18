@@ -5,38 +5,38 @@ github_users:
 repo_description_lines_max: 2
 
 huggingface_groups:
-  - name: Memes & Propaganda
-    description: Explainability and harmful-content resources for memes, propaganda, and multimodal reasoning.
+  - name: Media Integrity Intelligence
+    description: Datasets & models for factuality, checkworthiness, media bias, propaganda/persuasion, and hate -- across text, image, and multimodal LLM settings.
   - name: LlamaLens
     description: Base and language-specific model variants for multilingual instruction and analysis.
   - name: AraDiCE
     description: Arabic benchmark suites, transfer tasks, and evaluation resources.
-  - name: Question Answering
-    description: Faith, native, and spoken QA datasets designed for direct downstream use.
-  - name: Crisis
+  - name: Omni-modality
+    description: Native and spoken omnimodal datasets designed for direct benchmarking and downstream use.
+  - name: AI for Social Good
     description: Crisis-response, humanitarian, and multimodal resources for broad applied use.
 
 huggingface_repos:
   - id: QCRI/IslamicFaithQA
-    group: Question Answering
+    group: Omni-modality
   - id: QCRI/MemeXplain
-    group: Memes & Propaganda
+    group: Media Integrity Intelligence
   - id: QCRI/PropXplain
-    group: Memes & Propaganda
+    group: Media Integrity Intelligence
   - id: QCRI/ThatiAR
-    group: Memes & Propaganda
+    group: Media Integrity Intelligence
   - id: QCRI/ArMeme
-    group: Memes & Propaganda
+    group: Media Integrity Intelligence
   - id: QCRI/MemeIntel
-    group: Memes & Propaganda
+    group: Media Integrity Intelligence
   - id: QCRI/MemeLens
-    group: Memes & Propaganda
+    group: Media Integrity Intelligence
   - id: QCRI/MemeLens-VLM
-    group: Memes & Propaganda
+    group: Media Integrity Intelligence
   - id: QCRI/LlamaLens
     group: LlamaLens
   - id: QCRI/ArmPro
-    group: Memes & Propaganda
+    group: Media Integrity Intelligence
   - id: QCRI/LlamaLens-Arabic
     group: LlamaLens
   - id: QCRI/LlamaLens-English
@@ -48,7 +48,22 @@ huggingface_repos:
   - id: QCRI/LlamaLens-Hindi-Native
     group: LlamaLens
   - id: QCRI/Prop2Hate-Meme
-    group: Memes & Propaganda
+    group: Media Integrity Intelligence
+  - id: QCRI/AHA-MEMES
+    group: Media Integrity Intelligence
+    type: dataset
+  - id: QCRI/ArGuard-Task1
+    group: Media Integrity Intelligence
+    type: dataset
+  - id: QCRI/Arabic-Hateful-Memes
+    group: Media Integrity Intelligence
+    type: dataset
+  - id: QCRI/MemeReason
+    group: Media Integrity Intelligence
+    type: dataset
+  - id: QCRI/ProBel
+    group: Media Integrity Intelligence
+    type: dataset
   - id: QCRI/AraDiCE
     group: AraDiCE
   - id: QCRI/AraDICE-HellaSwag
@@ -74,25 +89,58 @@ huggingface_repos:
   - id: QCRI/AraDiCE-msa-to-egy
     group: AraDiCE
   - id: QCRI/MultiNativQA
-    group: Question Answering
+    group: Omni-modality
   - id: QCRI/SpokenNativQA
-    group: Question Answering
+    group: Omni-modality
   - id: QCRI/MenaSpeechBank
-    group: Question Answering
+    group: Omni-modality
+  - id: QCRI/OASIS
+    group: Omni-modality
+    type: dataset
+  - id: QCRI/WASIL
+    group: Omni-modality
+    type: dataset
+  - id: QCRI/M2CQA
+    group: Omni-modality
+    type: dataset
+  - id: QCRI/M2CQA-A
+    group: Omni-modality
+    type: dataset
+  - id: QCRI/MMCQA-SemEval27
+    group: Omni-modality
+    type: dataset
+  - id: QCRI/ArabicCulturalQA
+    group: Omni-modality
+    type: dataset
+  - id: QCRI/ImageEval-ArabicNLP26
+    group: Omni-modality
+    type: dataset
+  - id: QCRI/Aslema-Synth-TN
+    group: Omni-modality
+    type: dataset
+  - id: QCRI/OmniScore-deberta-v3
+    group: Omni-modality
+    type: model
+  - id: QCRI/OmniScore-mxbai
+    group: Omni-modality
+    type: model
+  - id: QCRI/OmniScore-Data
+    group: Omni-modality
+    type: dataset
   - id: QCRI/HumAID-all
-    group: Crisis
+    group: AI for Social Good
   - id: QCRI/HumAID-events
-    group: Crisis
+    group: AI for Social Good
   - id: QCRI/HumAID-event-type
-    group: Crisis
+    group: AI for Social Good
   - id: QCRI/CrisisBench-all-lang
-    group: Crisis
+    group: AI for Social Good
   - id: QCRI/CrisisBench-english
-    group: Crisis
+    group: AI for Social Good
   - id: QCRI/MEDIC
-    group: Crisis
+    group: AI for Social Good
   - id: QCRI/CrisisMMD
-    group: Crisis
+    group: AI for Social Good
 
 github_repos:
   - qcri/LLMeBench
@@ -103,6 +151,5 @@ github_repos:
   - hsajjad/ConceptX
   - firojalam/multimodal_social_media
   - xashru/punctuation-restoration
-  - AridHasan/MUBASE
   - banglanlp/bnlp-resources
   - banglanlp/bangla-sentiment-classification

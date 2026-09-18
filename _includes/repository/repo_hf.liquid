@@ -2,6 +2,12 @@
 {% assign repo_parts = repo_id | split: '/' %}
 {% assign repo_name = repo_parts | last %}
 {% assign group_name = include.repository.group | default: "" %}
+{% assign repo_type = include.repository.type | default: "model" %}
+{% if repo_type == "dataset" %}
+  {% assign repo_url = "https://huggingface.co/datasets/" | append: repo_id %}
+{% else %}
+  {% assign repo_url = "https://huggingface.co/" | append: repo_id %}
+{% endif %}
 
 {% if site.data.repositories.repo_description_lines_max %}
   {% assign max_lines = site.data.repositories.repo_description_lines_max %}
@@ -12,7 +18,7 @@
 <div class="repo p-2 text-center">
   <a
     class="repo-card js-hf-repo-card js-repo-card"
-    href="https://huggingface.co/{{ repo_id }}"
+    href="{{ repo_url }}"
     rel="external nofollow noopener"
     target="_blank"
     data-hf-repo="{{ repo_id }}"
