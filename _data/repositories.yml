@@ -103,7 +103,7 @@ huggingface_repos:
   - id: QCRI/M2CQA
     group: Omni-modality
     type: dataset
-  - id: QCRI/M2CQA-A
+  - id: QCRI/M2CQA-S
     group: Omni-modality
     type: dataset
   - id: QCRI/MMCQA-SemEval27
@@ -144,8 +144,6 @@ huggingface_repos:
 
 github_repos:
   - qcri/LLMeBench
-  - MaramHasanain/ArMPro
-  - firojalam/assisting-fact-checking
   - firojalam/COVID-19-disinformation
   - firojalam/crisis_datasets_benchmarks
   - hsajjad/ConceptX
