@@ -22,6 +22,7 @@ nav_order: 7
   - [Hunzalah Hassan Bhatti](https://scholar.google.com/citations?user=6x46h1EAAAAJ&hl=en) (2025-)
   - [Gagan Bhatia](https://scholar.google.com/citations?user=2Z0KWkEAAAAJ&hl=en) (2025)
   - [Rabindra Nath Nandi](https://scholar.google.com/citations?user=MCHXKrUAAAAJ&hl=en&oi=ao) (2019-)
+  - [Tajwaar Shafiq](https://www.linkedin.com/in/tajwaarshafiq/) (2026-)
   - [Nowshin Mahjabin](https://www.linkedin.com/in/nowshiningg/) (2026-)
 
 - **Collaborative Supervision:**
