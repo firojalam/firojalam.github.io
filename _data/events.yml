@@ -50,10 +50,16 @@ sections:
 
   - id: shared-tasks
     title: Shared Tasks
-    kicker: "2021-2026"
+    kicker: "2021-2027"
     item_label: Shared Task
     description: "Evaluation campaigns organized across CheckThat!, ArAIEval, GenAI Content Detection, SemEval, and NLP4IF, spanning fact-checking, propaganda, persuasion, multimodal reasoning, and machine-generated content detection."
     items:
+      - year: 2027
+        title: "MMCultureQA: Multilingual and Multimodal Culturally Grounded Spoken and Visual Question Answering"
+        venue: SemEval 2027
+        when: 2027 edition
+        url: https://mmcultureqa-semeval27.github.io/
+        summary: "Given an image and a spoken or written question, systems produce a short, open-ended answer requiring local cultural knowledge beyond what is directly visible."
       - year: 2026
         title: POLAR
         venue: SemEval 2026 Task 9
