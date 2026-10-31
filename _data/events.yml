@@ -208,11 +208,18 @@ sections:
 
   - id: bof-sessions
     title: BoF Sessions
-    kicker: "2024-2025"
+    kicker: "2024-2026"
     item_label: Birds of a Feather
     description: "Birds-of-a-Feather sessions around multilingual, multimodal, and culturally grounded language technologies."
     home_url: https://nativqa.gitlab.io/events/index.html
     items:
+      - year: 2026
+        title: "Culturally Grounded and Trustworthy NLP: Perspectives from Islamic Media Ethics"
+        venue: EMNLP 2026
+        when: October 25, 2026
+        location: Budapest, Hungary
+        url: https://islamic-media-ethics-ai.github.io/events/emnlp-2026-bof/
+        summary: "BoF on trustworthy, culturally grounded AI, connecting Islamic media ethics with reliable evidence, accountability, and multilingual, multimodal question answering."
       - year: 2025
         title: Multilingual and Multimodal LLMs for Everyday Knowledge
         venue: EMNLP 2025
