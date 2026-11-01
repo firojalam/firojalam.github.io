@@ -15,10 +15,17 @@ sections:
 
   - id: workshops
     title: Workshops
-    kicker: "2023-2026"
+    kicker: "2023-2027"
     item_label: Workshop
     description: "Workshops spanning Bangla language processing and AI-generated content detection, with a mix of papers, shared tasks, mentoring, and community building."
     items:
+      - year: 2027
+        title: Third Workshop on Bangla Language Processing
+        venue: NAACL 2027
+        when: June 1-5, 2027
+        location: San Francisco, California, USA
+        url: https://blp-workshop.github.io/
+        summary: "The third BLP Workshop will bring together research on Bangla language processing as a co-located event at NAACL 2027. More information will be announced soon."
       - year: 2026
         title: The 16th International Workshop on Spoken Dialogue Systems
         venue: IWSDS 2026
@@ -60,6 +67,12 @@ sections:
         when: 2027 edition
         url: https://mmcultureqa-semeval27.github.io/
         summary: "Given an image and a spoken or written question, systems produce a short, open-ended answer requiring local cultural knowledge beyond what is directly visible."
+      - year: 2027
+        title: Multilingual Cultural Question Answering
+        venue: Third Workshop on Bangla Language Processing
+        when: 2027 edition
+        url: https://multilingual-qa.github.io/
+        summary: "Build systems that answer culturally grounded questions from native speakers in Bangla, English, Assamese, and Hindi, using the language in which each question was asked."
       - year: 2026
         title: POLAR
         venue: SemEval 2026 Task 9
